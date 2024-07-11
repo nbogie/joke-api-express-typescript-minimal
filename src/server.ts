@@ -6,8 +6,6 @@ import cors from "cors";
 app.use(express.json());
 app.use(cors());
 
-console.log("Hello C9 typescript world");
-
 interface Message {
     author: string;
     text: string;
@@ -40,6 +38,7 @@ app.get("/sum/:a/:b", (req, res) => {
     res.json({ inputs: [a, b], result });
 });
 
-app.listen(4000, () => {
-    console.log("server started listening");
+const PORT = process.env.PORT ?? 4000;
+app.listen(PORT, () => {
+    console.log(`server started listening on port ${PORT} at ${new Date()}`);
 });
