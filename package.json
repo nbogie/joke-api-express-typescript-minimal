@@ -1,0 +1,14 @@
+{
+    "name": "joke-api-express-typescript-minimal",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "nbogie <neillbogie@googlemail.com>",
+    "license": "MIT",
+    "scripts": {
+        "type-check": "tsc --noEmit",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^5.5.3"
+    }
+}
