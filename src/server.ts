@@ -15,7 +15,7 @@ interface Message {
 
 const messages: Message[] = [{ author: "neill", text: "first!" }];
 
-app.get("/messages", function (req, res) {
+app.get("/messages", function (_req, res) {
     res.json(messages);
 });
 
